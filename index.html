@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+          <div class="overlay"></div>
+        <div class="blob-background" id="blobBackground"></div>
+        <div class="container">
+            <div class="weather-container">
+                <div id="weather"></div> 
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                   
+                    <div class="joke-title">
+                        <h2>Preparat per riure? 🤣</h2>
+                    </div>
+                    <div class="joke-text-container">
+                        <div id="joke" class="joke-text"></div>
+                    </div>
+                   
+                    <div class="score-buttons">
+                        <button id="score-1" class="score-button">😕</button>
+                        <button id="score-2" class="score-button">😐</button>
+                        <button id="score-3" class="score-button">😄</button>
+                    </div>
+                    <button id="next-jokee-button" class="next-joke-button" onclick="showNextJoke()">Següent acudit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="build/index.js"></script>
+</body>
+</html>
