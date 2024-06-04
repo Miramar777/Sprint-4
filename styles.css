@@ -3,8 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden; /* Ensure no scrollbars appear */
-    display: flex;
+    overflow: hidden; 
     justify-content: center;
     align-items: center;
     background: url('') no-repeat center center fixed;
@@ -52,18 +51,19 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Add padding to prevent content from touching edges */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 20px; 
+    box-sizing: border-box; 
 }
+
 .weather-container {
     position: fixed;
     top: 10px; 
     left: 10px;
-    background: rgba(255, 255, 255, 0); /* Slightly transparent background for readability */
+    background: rgba(255, 255, 255, 0); 
     padding: 10px;
     border-radius: 5px;
-    font-size: 1.2em; /* Increase font size */
-    color: #333; /* Dark text color for readability */
+    font-size: 1.2em; 
+    color: #333;
     z-index: 2;
 }
 
@@ -72,12 +72,12 @@ html, body {
     padding: 100px;
     border-radius: 8px;
 
-    display: flex; /* Use flexbox to center content */
-    flex-direction: column; /* Align items vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text content */
-    max-width: 100%; /* Ensure it doesn't overflow on mobile */
-    box-sizing: border-box; /
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    max-width: 100%; 
+    box-sizing: border-box; 
 }
 
 #joke-container {
@@ -89,13 +89,13 @@ html, body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif; /* Default font for jokes */
+    font-family: Arial, Helvetica, sans-serif; 
     z-index: 3;
 }
 .joke-text-container {
-    max-width: 600px; /* Set a max-width for the joke text container */
-    margin: 0 auto; /* Center the joke text container */
-    white-space: normal; /* Allow wrapping for long text */
+    max-width: 600px; 
+    margin: 0 auto; 
+    white-space: normal; 
     overflow: hidden;
 
 }
@@ -108,22 +108,22 @@ html, body {
 }
 
 .score-buttons button {
-    border: none; /* Remove border */
-    background-color: transparent; /* Set background color to transparent */
-    font-size: 2em; /* Increase the font size to make emojis bigger */
-    cursor: pointer; /* Change cursor to pointer */
-    padding: 20; /* Remove padding */
+    border: none; 
+    background-color: transparent; 
+    font-size: 2em; 
+    cursor: pointer; 
+    padding: 20; 
     margin-bottom: 30px;
     box-shadow: none;
 }
 
 .score-buttons button:focus {
-    outline: none; /* Remove focus outline */
+    outline: none; 
 }
 
 .score-buttons button::before {
-    content: attr(aria-label); /* Display emojis using aria-label */
-    color: black; /* Set the color of emojis to black */
+    content: attr(aria-label); 
+    color: black; 
 }
 
 button {
@@ -143,11 +143,11 @@ button {
 
 @media (max-width: 768px) {
     .container {
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 10px; 
     }
 
     .card {
-        padding: 20px; /* Adjust padding for smaller screens */
+        padding: 20px; 
     }
 
     .weather-container {
@@ -158,21 +158,21 @@ button {
     }
 
     #joke {
-        font-size: 1em; /* Adjust font size for smaller screens */
+        font-size: 1em; 
     }
 
     .score-buttons button {
-        font-size: 1.5em; /* Adjust font size for smaller screens */
-        margin-bottom: 20px; /* Adjust margin for smaller screens */
+        font-size: 1.5em; 
+        margin-bottom: 20px; 
     }
 
     button {
-        font-size: 0.9em; /* Adjust font size for smaller screens */
-        padding: 8px 16px; /* Adjust padding for smaller screens */
+        font-size: 0.9em; 
+        padding: 8px 16px; 
     }
 
     .joke-text-container {
-        max-width: 90%; /* Adjust max-width for smaller screens */
+        max-width: 90%; 
     }
 
     .blob-background {

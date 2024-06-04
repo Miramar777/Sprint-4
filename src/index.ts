@@ -165,7 +165,7 @@ async function fetchWeather(): Promise<void> {
         console.error('Error fetching weather data:', error);
     }
 }
-// Call the fetchWeather function when the page loads
+
 fetchWeather();
 assignScoreButtonEvents();
 
@@ -175,10 +175,10 @@ assignScoreButtonEvents();
 
 document.addEventListener("DOMContentLoaded", function (event) {
     try {
-        fetchWeather(); // Added: Ensure weather data is fetched when the page loads
-        assignScoreButtonEvents(); // Changed: Ensure event handlers are attached after DOM content is loaded
-        showNextJoke(); // Changed: Ensure the first joke is displayed when the page loads
-        changeBackground(); // Changed: Ensure the background is set when the page loads
+        fetchWeather(); 
+        assignScoreButtonEvents(); 
+        showNextJoke(); 
+        changeBackground(); 
     } catch (error) {
         console.error("Failed to initialize:", error);
     }
